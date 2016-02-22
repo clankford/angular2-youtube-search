@@ -5,3 +5,7 @@ app.js
 app.js.map
 bootstrap.js
 bootstrap.js.map
+services.js
+services.js.map
+YouTubeService.js
+YouTubeService.js.map
