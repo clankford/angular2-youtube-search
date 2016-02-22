@@ -10,7 +10,8 @@
   },
   "files": [
     "./app/ts/app.ts",
-    "./app/ts/bootstrap.ts"
+    "./app/ts/bootstrap.ts",
+    "./app/ts/models/SearchResult.ts"
   ],
   "filesGlob": [
     "./app/**/*.ts",
