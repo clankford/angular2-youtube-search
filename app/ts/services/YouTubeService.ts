@@ -1,8 +1,12 @@
-import { Injectable, bind } from 'angular2/core'
+import { Injectable, Inject, bind } from 'angular2/core';
+import { Http } from 'angular2/http';
+import { YOUTUBE_API_KEY, YOUTUBE_API_URL } from './services';
 
 @Injectable()
 export class YouTubeService {
-  constructor() {
+  constructor(public http: Http,
+              @Inject(YOUTUBE_API_KEY) private apiKey: string,
+              @Inject(YOUTUBE_API_URL) private apiUrl: string) {
   }
 }
 
