@@ -1,6 +1,7 @@
 import { bind } from 'angular2/core';
 import { youTubeServiceInjectables } from './YouTubeService';
 
+// Is this the best place to inject constant values?
 export * from './YouTubeService';
 export var YOUTUBE_API_KEY: string = 'AIzaSyDOfT_BO81aEZScosfTYMruJobmpjqNeEk';
 export var YOUTUBE_API_URL: string = 'https://www.googleapis.com/youtube/v3/search';
