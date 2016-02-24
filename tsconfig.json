@@ -11,6 +11,7 @@
   "files": [
     "./app/ts/app.ts",
     "./app/ts/bootstrap.ts",
+    "./app/ts/components/SearchBox.ts",
     "./app/ts/models/SearchResult.ts",
     "./app/ts/services/services.ts",
     "./app/ts/services/YouTubeService.ts"
