@@ -13,6 +13,7 @@
     "./app/ts/bootstrap.ts",
     "./app/ts/components/SearchBox.ts",
     "./app/ts/components/SearchResultComponent.ts",
+    "./app/ts/components/YouTubeSearchComponent.ts",
     "./app/ts/models/SearchResult.ts",
     "./app/ts/services/services.ts",
     "./app/ts/services/YouTubeService.ts"
