@@ -16,7 +16,8 @@
     "./app/ts/components/YouTubeSearchComponent.ts",
     "./app/ts/models/SearchResult.ts",
     "./app/ts/services/services.ts",
-    "./app/ts/services/YouTubeService.ts"
+    "./app/ts/services/YouTubeService.ts",
+    "./app/ts/vendor.ts"
   ],
   "filesGlob": [
     "./app/**/*.ts",
