@@ -10,7 +10,6 @@
   },
   "files": [
     "./app/ts/app.ts",
-    "./app/ts/bootstrap.ts",
     "./app/ts/components/SearchBox.ts",
     "./app/ts/components/SearchResultComponent.ts",
     "./app/ts/components/YouTubeSearchComponent.ts",

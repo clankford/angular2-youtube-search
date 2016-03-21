@@ -5,14 +5,14 @@ var webpack             = require('webpack'),
     HtmlWebpackPlugin   = require('html-webpack-plugin'),
     WebpackNotifierPlugin = require('webpack-notifier'),
     ExtractTextPlugin   = require("extract-text-webpack-plugin");
- 
+
 /**
  * Support for extra commandline arguments
  */
 var argv = require('optimist')
             .alias('r','release').default('r', false)
             .argv;
- 
+
 /**
  * Useful variables
  */
@@ -25,11 +25,11 @@ var npmRoot = __dirname + "/node_modules";
 var appDir = __dirname + "/app";
 
 var entry = ["./app/ts/app.ts"]
- 
+
 if (isDevServer) {
   entry.unshift("webpack-dev-server/client?http://"+reloadHost+":8080");
 }
- 
+
 function makeConfig(options) {
   return {
     cache: true,
@@ -60,7 +60,7 @@ function makeConfig(options) {
       filename: "[name].js",
       publicPath: "/", // isDevServer ? './': './',
       chunkFilename: "[id].bundle.js",
- 
+
       // Hot Module Replacement settings:
       hotUpdateMainFilename: "updates/[hash].update.json",
       hotUpdateChunkFilename: "updates/[hash].[id].update.js"
@@ -121,7 +121,7 @@ function makeConfig(options) {
                                      '?outputStyle=expanded&' +
                                      'root='+appDir+'&' +
                                      '&includePaths[]'+npmRoot + '&' +
-                                     '&includePaths[]'+appDir 
+                                     '&includePaths[]'+appDir
                                     ]},
         { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,         loader: "url-loader" },
         { test: /\.html$/,    loader: "raw" },
@@ -147,6 +147,6 @@ function makeConfig(options) {
 }
 
 var config = makeConfig(argv)
- 
+
 console.log(require('util').inspect(config, {depth: 10}))
 module.exports = config;
